@@ -20,14 +20,13 @@ class Solution{
             rem = n%26;
             n/=26;
             if(rem==0){
-                ans+='Z';
+                ans='Z'+ans;
                 n--;
             }
-        else ans+=char(rem+64);
+        else ans  = char(rem+64)+ans;
         }
         
         
-        reverse(ans.begin(),ans.end());
         return ans;
     }
 };
