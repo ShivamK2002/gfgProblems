@@ -9,7 +9,7 @@ class Solution{
     public:
     
     bool check(int num){
-        if(num%8==0) return 1;
+        if(num%8==0) return true;
         return false;
         
     }
@@ -18,8 +18,7 @@ class Solution{
         if(n>3){
            s = s.substr(n-4,n-1);
         }
-          if(check(stoi(s))) return 1;
-        return -1;
+          return (check(stoi(s)))?1:-1;
     }
 };
 
